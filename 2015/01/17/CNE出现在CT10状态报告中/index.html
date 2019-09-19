@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="题目: CNE出现在CT10状态报告中发行日期: 2015-01-17文件日期: 未知描述: 这篇未注明日期的NSA论文描述了一个识别和处理第三方攻击计算机数据的项目。文件类型: 绝密关键字: CT10数据模型，GHOSTWolf">
+<meta name="description" content="题目: CNE出现在CT10状态报告中发行日期: 2015-01-17文件日期: 未知描述: 这篇未注明日期的NSA论文描述了一个识别和处理第三方攻击计算机数据的项目。文件类型: 绝密">
 <meta name="keywords" content="CT10数据模型,SIGINT,CNE数据">
 <meta property="og:type" content="article">
 <meta property="og:title" content="CNE出现在CT10状态报告中">
 <meta property="og:url" content="http://yoursite.com/2015/01/17/CNE出现在CT10状态报告中/index.html">
 <meta property="og:site_name" content="斯诺登文档">
-<meta property="og:description" content="题目: CNE出现在CT10状态报告中发行日期: 2015-01-17文件日期: 未知描述: 这篇未注明日期的NSA论文描述了一个识别和处理第三方攻击计算机数据的项目。文件类型: 绝密关键字: CT10数据模型，GHOSTWolf">
+<meta property="og:description" content="题目: CNE出现在CT10状态报告中发行日期: 2015-01-17文件日期: 未知描述: 这篇未注明日期的NSA论文描述了一个识别和处理第三方攻击计算机数据的项目。文件类型: 绝密">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-09-19T01:06:03.721Z">
+<meta property="og:updated_time" content="2019-09-19T08:52:15.205Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="CNE出现在CT10状态报告中">
-<meta name="twitter:description" content="题目: CNE出现在CT10状态报告中发行日期: 2015-01-17文件日期: 未知描述: 这篇未注明日期的NSA论文描述了一个识别和处理第三方攻击计算机数据的项目。文件类型: 绝密关键字: CT10数据模型，GHOSTWolf">
+<meta name="twitter:description" content="题目: CNE出现在CT10状态报告中发行日期: 2015-01-17文件日期: 未知描述: 这篇未注明日期的NSA论文描述了一个识别和处理第三方攻击计算机数据的项目。文件类型: 绝密">
 
 
 
@@ -364,7 +364,7 @@
       
 
       
-        <p><strong>题目:</strong> CNE出现在CT10状态报告中<br><strong>发行日期:</strong> 2015-01-17<br><strong>文件日期:</strong> 未知<br><strong>描述:</strong> 这篇未注明日期的NSA论文描述了一个识别和处理第三方攻击计算机数据的项目。<br><strong>文件类型:</strong> 绝密<br><strong>关键字:</strong> CT10数据模型，GHOSTWolf</p>
+        <p><strong>题目:</strong> CNE出现在CT10状态报告中<br><strong>发行日期:</strong> 2015-01-17<br><strong>文件日期:</strong> 未知<br><strong>描述:</strong> 这篇未注明日期的NSA论文描述了一个识别和处理第三方攻击计算机数据的项目。<br><strong>文件类型:</strong> 绝密</p>
 <a id="more"></a>
 <p><strong>执行摘要</strong><br>（S // SI // REL USA，FVEY）本文讨论的工作自2008年4月1日起完成将CNE数据纳入CT10试点项目。CT10在这方面投入了两个方面。首先，是将活动的SIGINT收集并警告到CT10。其次，设计了当前CT10数据模型的扩展，以支持CNE数据的进一步分析开发。由于这项工作，CT10现在支持警告建立新的TAO存在点。关于某些开发方法的互联网。此外，这为内部和外部合作伙伴铺平了道路，为CT10 CNE数据模型扩展的持续发展铺平了道路 。<br>（S // SI // REL USA，FVEY）本文末尾包含了具体的结论和建议。但是，本文中的大部分信息都有三个关键点：<br>•（U // FOUO）对CT10数据采集工作的优先支持。<br>•（U // FOUO）进一步建立DNI/CNE分析和开发团队。<br>•（S // SI // REL USA，FVEY）制定在CT10中使用CNE数据的战略愿景。<br>（S // SI // REL USA，FVEY）处理CNE数据的第一步是识别和获取CNE数据流以将此信息路由到CT10。这项工作提出了自己独特的挑战，如下一节所述。</p>
 <p><strong>当前状态</strong><br>（S // SI // REL USA，FVEY）CT10正在摄取单个CNE数据流，特别是FOXACID日志文件。这被CT10客户GHOSTWolf确定为首要任务 ，因此它被选为第一个追求的CNE数据流。在整个NSA中映射FOXACID数据流后，CT10从2008年2月中旬开始，从协议利用开始建立了这一数据流。<br>（S // SI // REL USA，FVEY）因为CNE数据模型扩展尚未实现此时，处理FOXACID日志的唯一方法是将信息拟合到当前的CT10数据模型中。这主要是因为当前模型的自然灵活性。在CT10摄取系统中定义新的“事件类型”很容易，并且从每个FOXACID事件中提取所有选择器来填充事件。当前模型设计的另一个好处是，为一个新的选择器类型定义变得容易植入ID并轻松将其集成到系统中。这允许将植入物ID添加到监视列表和目标选择器，以便CT10用户可以跟踪与定义的一组植入物相关联的任何事件。因此，如果CT10获得了包含植入回调信息的数据流，那么很容易将其添加到当前数据模型中，从而为分析人员提供跟踪通过FOXACID部署的植入物的附加功能。<br>（S // SI // REL USA，FVEY）由于这项工作，CT10系统现在通过一套警报技术提醒FOXACID开发活动。这包括GeoT中的地理位置倾斜，以及通过Agent Logic（IRC和电子邮件）和“空间仪表板”发出的警报。<br>（S // SI // REL USA，FVEY）从开发FOXACID摄取代码得出的一个结论是，当前的CT10数据模型可以支持比以前认为的更多的CNE数据 。当新的CNE流引入系统时，如果仍未实现扩展，则可以轻松地将它们添加到当前数据模型中 。</p>
@@ -406,8 +406,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2015/01/17/TUTELAGE/" rel="next" title="TUTELAGE">
-                <i class="fa fa-chevron-left"></i> TUTELAGE
+              <a href="/2013/04/24/SIGINT开发支持II项目管理评审/" rel="next" title="SIGINT开发支持II项目管理评审">
+                <i class="fa fa-chevron-left"></i> SIGINT开发支持II项目管理评审
               </a>
             
           </div>
@@ -416,8 +416,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2019/09/18/NSA代码详解/" rel="prev" title="NSA代码详解">
-                NSA代码详解 <i class="fa fa-chevron-right"></i>
+              <a href="/2015/01/17/TUTELAGE/" rel="prev" title="TUTELAGE">
+                TUTELAGE <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -486,7 +486,7 @@
               
                 <a href="/archives">
               
-                  <span class="site-state-item-count">22</span>
+                  <span class="site-state-item-count">25</span>
                   <span class="site-state-item-name">文章</span>
                 </a>
               </div>
@@ -508,7 +508,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">38</span>
+                  <span class="site-state-item-count">43</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
